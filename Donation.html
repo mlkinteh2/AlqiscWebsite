@@ -26,6 +26,35 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+    
+        <style>
+            /* Responsive iframe */
+            .iframe-container {
+                    width: 100%;
+                    max-width: 100%;
+                    margin: auto;
+                }
+        
+                iframe {
+                    width: 100%;
+                    border: none;
+                    height: 980px; /* Default height for larger screens */
+                }
+        
+                /* Adjust height for mobile screens */
+                @media (max-width: 768px) { /* Tablets */
+                    iframe {
+                        height: 600px; /* Shorter height */
+                    }
+                }
+        
+                @media (max-width: 480px) { /* Mobile phones */
+                    iframe {
+                        height: 1000px; /* Even shorter */
+                    }
+                }
+          </style>
+    
     </head>
 
     <body>
@@ -91,8 +120,12 @@
 
         <br>
         <br>
-        <iframe style="margin: 0%;" src="Templates/Donation/index.html" width="100%" height="550px" style="border:none;"></iframe>
-
+        
+        <div class="iframe-container">
+            <iframe src="Templates/Donation/index.html"></iframe>
+        </div>
+        
+    
 
          <!-- Footer Start -->
         <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
@@ -141,7 +174,7 @@
                         <div class="text-white mt-4 d-flex flex-column contact-link">
                             <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i>Albukhary International University,Jalan Tun Abdul Razak, 05200, Alor Setar, Kedah Darul Aman, Malaysia</a>
                             <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> +601 3778 888</a>
-                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> alqiscpersonal@gmail.com</a>
+                            <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> aqc@student.aiu.edu.my</a>
                         </div>
                     </div>
                 </div>
